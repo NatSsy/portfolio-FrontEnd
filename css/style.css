@@ -23,8 +23,81 @@
 .icon:hover::after{
     top: 0;
 } */
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* =========>NAV BAR SECTION<======== */
+.headerBody{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5 10%;
+}
+
+.headerBody .logo{
+    cursor: pointer;
+}
+
+.headerBody .logo{
+    height: 70px;
+    width: auto;
+    transition: all 0.3s ;
+}
+
+.headerBody .logo img:hover{
+    transform: scale(1.2);
+}
+
+.headerBody .navLinks{
+    list-style: none;
+}
+
+.headerBody .navLinks li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.headerBody .navLinks li:hover{
+    transform: scale(1.1);
+}
+
+.headerBody .navLinks a{
+    font-size: 700;
+    text-decoration: none;
+    color: black;
+}
+
+.headerBody .navLinks li a:hover{
+    color: red;
+}
+
+.headerBody .btn button{
+    font-weight: 700;
+    color: black;
+    padding: 9px 25px;
+    background: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.headerBody .btn button:hover{
+    background-color: red;
+}
+/* =========>NAV BAR SECTION<======== */
 
 /* =========>FOOTER SECTION<======== */
+
+.fo{
+    margin: auto;
+}
+
 .icon{
     display: flex;
 }
@@ -35,30 +108,31 @@
     text-align: center;
     text-decoration: none;
     color: black;
-    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 0px   20px        20px rgba(0, 0, 0, 0.05); 
+    /*        eje x eje y  desenfoque / padding de la sombra */
     margin: 0 30px;
-    border-radius: 50%;;
-    position: relative;
-    overflow: hidden ;
+    border-radius: 50%; /*VER*/
+    position: relative;/*VER */
+    overflow: hidden ;/*VER */
 }
 
 .icon a .fa{
     font-size: 30px;
-    line-height: 80px;
+    line-height: 80px; /*VER */
     position: relative;
-    z-index: 10;
-    transition: color 0.5s;
+    z-index: 10; /*VER */
+    transition: color 0.5s; /*VER */
 }
 
-.icon a::after{
+.icon a::after{ /*VER */
     content: "";
     width: 100%;
     height: 100%;
     top: -90px;;
     left: 0;
-    background: linear-gradient(-45deg, red, black);
+    background: linear-gradient(-45deg, red, black); /*VER */
     position: absolute;
-    transition: 0.5s;
+    transition: 0.5s;/*VER */
 }
 
 .icon a:hover::after{
