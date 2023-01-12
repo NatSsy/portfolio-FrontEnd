@@ -1,36 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,500&display=swap');
 
-/* CODIGO VIEJO */
-/* .icon{
-    text-decoration: none;
-    color: black;
-    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.05);
-    margin: 0px 20px;
-    border-radius: 50%;
-    position: relative;
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
 }
 
-.icon::after{
-    content: "";
-    width: 100%;
-    height: 100%;
-    top: -90px;
-    left: 0;
-    background: linear-gradient(-45deg, red, black);
-    position: absolute;
-    transition: 0.5s;
-}
-
-.icon:hover::after{
-    top: 0;
-} */
-body{
+body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
+
+
 /* =========>NAV BAR SECTION<======== */
-.headerBody{
+.headerBody {
     background-color: #fff;
     display: flex;
     justify-content: space-between;
@@ -39,44 +25,61 @@ body{
     padding: 5 10%;
 }
 
-.headerBody .logo{
+.headerBody .logo {
     cursor: pointer;
 }
 
-.headerBody .logo{
+.headerBody .logo {
     height: 70px;
     width: auto;
-    transition: all 0.3s ;
+    transition: all 0.3s;
 }
 
-.headerBody .logo img:hover{
+.headerBody .logo img:hover {
     transform: scale(1.2);
 }
 
-.headerBody .navLinks{
+.headerBody .menu {
     list-style: none;
 }
 
-.headerBody .navLinks li {
+.headerBody .menu li {
     display: inline-block;
     padding: 0 20px;
 }
 
-.headerBody .navLinks li:hover{
+.headerBody .menu li:hover {
     transform: scale(1.1);
 }
 
-.headerBody .navLinks a{
+.headerBody .menu ul {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+.headerBody .menu a {
+    font-family: 'Roboto Mono', monospace;
     font-size: 700;
     text-decoration: none;
     color: black;
+    position: relative;
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #262626;
+    font-size: 16px;
+    font-weight: 100;
+    transition: .5s;
+    z-index: 1;
 }
 
-.headerBody .navLinks li a:hover{
-    color: red;
+.headerBody .menu li a:hover {
+    color: grey;
 }
 
-.headerBody .btn button{
+.headerBody .btn button {
+    font-family: 'Roboto Mono', monospace;
     font-weight: 700;
     color: black;
     padding: 9px 25px;
@@ -85,64 +88,82 @@ body{
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
+    position: relative;
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #262626;
+    font-size: 16px;
+    font-weight: 100;
+    transition: .5s;
+    z-index: 1;
 }
 
-.headerBody .btn button:hover{
+.headerBody .btn button:hover {
     background-color: red;
 }
+
+
 /* =========>NAV BAR SECTION<======== */
 
 /* =========>FOOTER SECTION<======== */
 
-.fo{
+.fo {
     margin: auto;
 }
 
-.icon{
+.icon {
     display: flex;
 }
 
-.icon a{
+.icon a {
     width: 80px;
     height: 80px;
     text-align: center;
     text-decoration: none;
     color: black;
-    box-shadow: 0px 0px   20px        20px rgba(0, 0, 0, 0.05); 
+    box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.05);
     /*        eje x eje y  desenfoque / padding de la sombra */
     margin: 0 30px;
-    border-radius: 50%; /*VER*/
-    position: relative;/*VER */
-    overflow: hidden ;/*VER */
-}
-
-.icon a .fa{
-    font-size: 30px;
-    line-height: 80px; /*VER */
+    border-radius: 50%;
+    /*VER*/
     position: relative;
-    z-index: 10; /*VER */
-    transition: color 0.5s; /*VER */
+    /*VER */
+    overflow: hidden;
+    /*VER */
 }
 
-.icon a::after{ /*VER */
+.icon a .fa {
+    font-size: 30px;
+    line-height: 80px;
+    /*VER */
+    position: relative;
+    z-index: 10;
+    /*VER */
+    transition: color 0.5s;
+    /*VER */
+}
+
+.icon a::after {
+    /*VER */
     content: "";
     width: 100%;
     height: 100%;
-    top: -90px;;
+    top: -90px;
+    ;
     left: 0;
-    background: linear-gradient(-45deg, red, black); /*VER */
+    background: linear-gradient(-45deg, red, black);
+    /*VER */
     position: absolute;
-    transition: 0.5s;/*VER */
+    transition: 0.5s;
+    /*VER */
 }
 
-.icon a:hover::after{
-    top:0;
+.icon a:hover::after {
+    top: 0;
 
 }
 
 .icon a:hover {
     color: #fff;
 }
-
-
-
