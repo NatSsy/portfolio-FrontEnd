@@ -16,91 +16,37 @@ body {
 
 
 /* =========>NAV BAR SECTION<======== */
-.headerBody {
-    background-color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 85px;
-    padding: 5 10%;
+.headerBody .textNav{
+    font-family: "Roboto Mono", cursive;
 }
 
-.headerBody .logo {
-    cursor: pointer;
+.headerBody .textNav .atext{
+    transition: 0.2s;
 }
 
-.headerBody .logo {
-    height: 70px;
-    width: auto;
-    transition: all 0.3s;
-}
-
-.headerBody .logo img:hover {
+.headerBody .textNav .atext:hover{
     transform: scale(1.2);
 }
 
-.headerBody .menu {
-    list-style: none;
-}
-
-.headerBody .menu li {
-    display: inline-block;
-    padding: 0 20px;
-}
-
-.headerBody .menu li:hover {
-    transform: scale(1.1);
-}
-
-.headerBody .menu ul {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    display: flex;
-}
-
-.headerBody .menu a {
-    font-family: 'Roboto Mono', monospace;
-    font-size: 700;
-    text-decoration: none;
-    color: black;
-    position: relative;
-    display: block;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #262626;
-    font-size: 16px;
-    font-weight: 100;
-    transition: .5s;
-    z-index: 1;
-}
-
-.headerBody .menu li a:hover {
-    color: grey;
-}
-
-.headerBody .btn button {
+.headerBody .btnNav button {
     font-family: 'Roboto Mono', monospace;
     font-weight: 700;
     color: black;
     padding: 9px 25px;
-    background: #fff;
     border: none;
-    border-radius: 50px;
+    border-radius: 100px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
-    position: relative;
-    display: block;
     text-transform: uppercase;
     text-decoration: none;
-    color: #262626;
-    font-size: 16px;
     font-weight: 100;
-    transition: .5s;
-    z-index: 1;
+    transition: .3s;
 }
 
-.headerBody .btn button:hover {
-    background-color: red;
+.headerBody .btnNav button:hover {
+    transform: scale(1.1);
+    color: white;
+    background-color: black;
 }
 
 
@@ -152,7 +98,7 @@ body {
     top: -90px;
     ;
     left: 0;
-    background: linear-gradient(-45deg, red, black);
+    background: #000000;
     /*VER */
     position: absolute;
     transition: 0.5s;
