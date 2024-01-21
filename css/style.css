@@ -1,31 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,500&display=swap');
 
-*, *::before, *::after{
-    margin: auto;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-
-
 /* =========>NAV BAR SECTION<======== */
-.headerBody .textNav{
+
+.conteiner-header{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px;
+}
+
+.nav-links {
     font-family: "Roboto Mono", cursive;
+    font-size: 18px;
+    list-style: none;
+    margin: auto; /*si se quita se agrega solo un margin abajo de 16px */
+    padding-left: 0; /* si se quita se agrega solo un padding a la izquierda de 32px */
 }
 
-.headerBody .textNav .atext{
-    transition: 0.2s;
+.conteiner-header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;
 }
 
-.headerBody .textNav .atext:hover{
+.nav-links .atext{
+    transition: 0.3s;
+}
+
+.nav-links .atext:hover{
     transform: scale(1.2);
 }
 
-.headerBody .btnNav button {
+.btnNav button {
     font-family: 'Roboto Mono', monospace;
     font-weight: 700;
     color: black;
@@ -40,7 +47,7 @@ body {
     transition: .3s;
 }
 
-.headerBody .btnNav button:hover {
+.btnNav button:hover {
     transform: scale(1.1);
     color: rgb(255, 255, 255);
     background-color: rgb(0, 0, 0);

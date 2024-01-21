@@ -11,29 +11,22 @@
     <title>NJS Developer</title>
 </head>
 
-<body class="bg-black ">
-    <div class="container-fluid fo bg-light">
-        <header
-            class=" d-flex  p-4 headerBody">
-            <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
-                <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
-                    <use xlink:href="#bootstrap" />
-                </svg>
-            </a>
-
-            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 textNav">
-                <li><a href="#" class="nav-link pe-3 link-dark atext">Natanael</a></li>
-                <li><a href="#" class="nav-link pe-3 link-dark atext">Sobre Mi</a></li>
-                <li><a href="#" class="nav-link pe-3 link-dark atext">Proyectos</a></li>
-                <li><a href="#" class="nav-link pe-3 link-dark atext">Educacion</a></li>
-                <li><a href="#" class="nav-link pe-3 link-dark atext">Contacto</a></li>
+<body class="bg-black">
+    <header class="conteiner-header">
+        <div class="logo">
+            <img src="../img/Mountain.png" alt="NJS-Developer">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a class="nav-link atext" href="#">Natanael</a></li>
+                <li><a class="nav-link atext" href="#">Sobre mi</a></li>
+                <li><a class="nav-link atext" href="#">Proyectos</a></li>
+                <li><a class="nav-link atext" href="#">Educacion</a></li>
+                <li><a class="nav-link atext" href="#">Contactos</a></li>
             </ul>
-
-            <div class="col-md-3 text-end btnNav">
-                <button type="button" class="btn btn-outline-primary  ">Descargar CV</button>
-            </div>
-        </header>
-    </div>
+        </nav>
+        <a class="btn btnNav" href="#"> <button>DESCARGAR CV</button></a>
+    </header>
     <main>
         <div class="text-white">
             <h1> Natanael </h1>
@@ -42,7 +35,7 @@
     </main>
     <!-- Utilizamos container fluid para que el footer ocupe todo el ancho de la pantalla y no deje bordes a los costados que seria solamente "container"  -->
 
-    <footer class=" container-fluid py-3 my-4 bg-white">
+    <footer class="container-fluid py-3 my-4 bg-white">
         <div class="row d-flex justify-content-center p-4">
             <div class="col-xs-12 col-md-6 col-lg-3">
                 <p class="h3 text-center text-black 
